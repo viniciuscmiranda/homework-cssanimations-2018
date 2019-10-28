@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cena 4</title>
+	<link rel="icon" href="img/icon.ico" type="image/x-icon"/>s
+	<style type="text/css">
+		*{
+			margin: 0; 
+			padding: 0;
+		} body{background: black;}
+
+		#container{
+			display: flex;
+			box-sizing: border-box;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		#bg{
+			border: 4px solid white; 
+			background: url("img/cena4/bg.jpeg");
+			background-position: 60%;
+			background-size: 130%;
+			background-repeat: no-repeat;
+			width: calc(1280px * 3 / 4); 
+			height: calc(800px * 3 / 4);
+			position: relative;
+			overflow: hidden;
+			animation: colors 5s infinite linear;
+		}
+
+		@keyframes colors{
+			50%{filter: hue-rotate(20deg);}
+		}
+
+		#floweygeral{
+			position: absolute;
+			left: 50%;
+			top: 35%;
+			transform: translate(-50%);
+			z-index: 2;
+			animation: colors 5s infinite linear;
+		}
+
+		#flowey{
+			position: relative;	
+			width: 100%;
+			height: 100%;
+			animation: shadow 6s infinite linear;
+		}
+
+		@keyframes shadow{
+			50%{filter: opacity(0.6);}
+		}
+
+		#flowey #corpo{ height: calc(688px * 3 / 4); }
+
+		#flowey #olhos{
+			position: absolute;
+			left: 49%;
+			top: 26%;
+			transform: translate(-50%, -50%);
+			animation: brila 2s infinite linear;
+		}
+
+		#flowey #olhos img{
+			height: calc(51px * 3 / 4);
+			animation: pisca 2s infinite linear;
+		}
+
+		@keyframes pisca{
+			92%{ transform: initial; }
+			95%{ transform: scaleY(.2) scaleX(1.8); }
+		}
+
+		#flowey #boca{
+			position: absolute;
+			left: 46%;
+			top: 32%;
+			transform: translate(-50%, -50%);
+			height: calc(47px * 3 / 4);
+		}
+
+		#ixtrelas{
+			position: absolute;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translate(-50%);
+			width: 100%;
+			animation: brila 3s infinite linear;
+			filter: drop-shadow(0 0 10px cyan);
+			transition: all ease-in .2s;
+		}
+
+		@keyframes brila{
+			50%{ filter: drop-shadow(2px 2px 50px white); }
+		}
+
+		#txt{
+			width: 80%;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			top: 10px;
+			background: black;
+			border: 4px solid white;
+			padding: 16px;
+		}
+
+		.next{
+			color: white;
+			font-size: 100px;
+			font-weight: bold;
+			font-family: Calibri;
+			transform: scaleY(1.2);
+			text-decoration: none;
+			margin: auto 20px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<a href="cena3.html" class="next"><</a> 
+		<div id="bg">
+			<div id="floweygeral">
+				<div id="flowey">
+					<img src="img/cena4/flowey.png" id="corpo">
+					<div id="olhos">
+						<img src="img/cena4/olhos.png">
+					</div>
+					<img src="img/cena4/boca.png" id="boca">
+				</div>
+			</div>
+
+			<img src="img/cena4/estrelas.png" id="ixtrelas">
+			<img src="img/cena4/texto.png" id="txt">
+		</div>
+
+		<a href="cena5.html" class="next">></a> 
+	</div>
+
+</body>
+</html>

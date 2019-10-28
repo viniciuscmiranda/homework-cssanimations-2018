@@ -1,0 +1,26 @@
+Cena 1 - Era uma vez uma pequena flor dourada chamada Flowey. 
+Desc   - Pisca os olhos ao clicar.
+	 Bg: grama se movendo.
+
+Cena 2 - Ela habitava as solitárias ruínas do subsolo. 
+Desc   - Lágrima cái ao clicar.
+	 Bg: ruínas.
+	 Checkpoint animado ao fundo; hover: brilha mais forte.
+
+Cena 3 - Mas apesar da solidão, Flowey não perdeu a determinação! 
+Desc   - Sorriso determinado.
+	 Bg: ruínas.
+	 Coração brilha no topo de sua cabeça; hover: cresce.
+	 
+
+Cena 4 - Ele guardava dentro de si um graaaande sonho...
+Desc   - Sombra no rosto.
+	 Bg: estrelas da caverna piscando; hover: brilham mais forte.
+
+Cena 5 - O sonho de exterminar toda criatura viva na face da terra!
+Desc   - Risada maligna.
+	 Luz vermelha no rosto.
+	 Bg: fogo se movendo.
+
+Cena 6 - "HAHAHAHAHAHAHAHAHA!!!"
+Desc   - Texto subindo.
